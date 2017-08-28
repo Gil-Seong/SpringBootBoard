@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-	pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
@@ -12,33 +12,33 @@
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-<title>°Ô½Ã±Û »ó¼¼</title>
+<title>ê²Œì‹œê¸€ ìƒì„¸</title>
 </head>
 <body>
-	<h3>°Ô½Ã±Û »ó¼¼</h3>
+	<h3>ê²Œì‹œê¸€ ìƒì„¸</h3>
 	<div style="padding: 30px;">
 		<div class="form-group">
-			<label>Á¦¸ñ</label> <span>${board.subject}</span>
+			<label>ì œëª©</label> <span>${board.subject}</span>
 		</div>
 		<div class="form-group">
-			<label>ÀÛ¼ºÀÚ</label> <span>${board.writer}</span>
+			<label>ì‘ì„±ì</label> <span>${board.writer}</span>
 		</div>
 		<div class="form-group">
-			<label>ÀÛ¼º³¯Â¥</label> <span><fmt:formatDate
+			<label>ì‘ì„±ë‚ ì§œ</label> <span><fmt:formatDate
 					value="${board.reg_date}" pattern="yyyy/ MM/ dd HH:mm" /></span>
 		</div>
 		<div class="form-group">
-			<label>Á¶È¸¼ö</label> <span>${board.hit}</span>
+			<label>ì¡°íšŒìˆ˜</label> <span>${board.hit}</span>
 		</div>
 		<div class="form-group">
-			<label>³»¿ë</label>
+			<label>ë‚´ìš©</label>
 			<p>${board.content}</p>
 		</div>
 		<div class="form-group">
-			<input type="button" value="¼öÁ¤"
+			<input type="button" value="ìˆ˜ì •"
 				onclick='location.href="/board/post/${board.bno}"'>
 			<form:form action="/board/post/${board.bno}" method="DELETE">
-				<input type="submit" value="»èÁ¦">
+				<input type="submit" value="ì‚­ì œ">
 			</form:form>
 		</div>
 	</div>

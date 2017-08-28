@@ -1,8 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-	pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -14,22 +15,22 @@
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 <script src="//code.jquery.com/jquery.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<title>°Ô½Ã±Û ¼öÁ¤</title>
+<title>ê²Œì‹œê¸€ ìˆ˜ì •</title>
 </head>
 <body>
-	<h3>°Ô½Ã±Û ¼öÁ¤</h3>
+	<h3>ê²Œì‹œê¸€ ìˆ˜ì •</h3>
 	<div style="padding: 30px;">
 		<form:form commandName="BoardVO" action="/board/post/${board.bno}"
 			method="PATCH">
 			<div class="form-group">
-				<label>Á¦¸ñ</label> <input type="text" name="subject"
+				<label>ì œëª©</label> <input type="text" name="subject"
 					value="${board.subject}" class="form-control">
 			</div>
 			<div class="form-group">
-				<label>³»¿ë</label>
+				<label>ë‚´ìš©</label>
 				<textarea name="content" class="form-control" rows="5">${board.content}</textarea>
 			</div>
-			<button type="submit" class="btn btn-default">¼öÁ¤</button>
+			<button type="submit" class="btn btn-default">ìˆ˜ì •</button>
 		</form:form>
 	</div>
 </body>
