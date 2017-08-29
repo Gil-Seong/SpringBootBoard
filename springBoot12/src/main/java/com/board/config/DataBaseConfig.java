@@ -34,6 +34,10 @@ public class DataBaseConfig {
 	/**
 	 * HiddenHttpMethodFilter
 	 */
+	
+	// HiddenHttpMethodFilter를 적용하는데 이 Filter의 역할은
+	// Spring form tag lib 사용시 GET, POST, DELTET, PUT 을 사용할 수 있도록 도와주는 역할을 해줍니다.
+
 	@Bean
 	public HiddenHttpMethodFilter hiddenHttpMethodFilter() {
 		HiddenHttpMethodFilter filter = new HiddenHttpMethodFilter();
